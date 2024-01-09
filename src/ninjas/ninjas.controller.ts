@@ -52,7 +52,8 @@ export class NinjasController {
   ) {
     return {
       id,
-      name: updateNinjasDto,
+      name: updateNinjasDto.name,
+      speed: updateNinjasDto.speed,
     };
   }
 
