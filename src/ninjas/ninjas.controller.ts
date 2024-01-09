@@ -29,7 +29,7 @@ export class NinjasController {
   @Post()
   createNinja(@Body() createNinjaDto: CreateNinjasDto) {
     return {
-      name: createNinjaDto.name,
+      name: .name,
     };
   }
 
