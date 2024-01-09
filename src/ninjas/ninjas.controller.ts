@@ -45,8 +45,10 @@ export class NinjasController {
   }
 
   @Patch(':id')
-  patchNinja() {
-    return {};
+  patchNinja(@Param('id') id: string) {
+    return {
+      id,
+    };
   }
 
   @Delete(':id')
