@@ -30,6 +30,7 @@ export class NinjasController {
   createNinja(@Body() createNinjaDto: CreateNinjasDto) {
     return {
       name: createNinjaDto.name,
+      speed: createNinjaDto.speed,
     };
   }
 
