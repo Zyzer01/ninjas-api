@@ -45,9 +45,13 @@ export class NinjasController {
   }
 
   @Patch(':id')
-  patchNinja(@Param('id') id: string) {
+  patchNinja(
+    @Param('id') id: string,
+    @Body() updateNinjasDto: UpdateNinjasDto,
+  ) {
     return {
       id,
+      name: updateNinjasDto,
     };
   }
 
