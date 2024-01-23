@@ -41,7 +41,7 @@ export class NinjasController {
   ) {
     return {
       id,
-      speed: updateNinjasDto,
+      speed: updateNinjasDto, 
     };
   }
 
