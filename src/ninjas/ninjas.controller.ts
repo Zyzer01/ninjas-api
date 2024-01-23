@@ -16,7 +16,7 @@ import { UpdateNinjasDto } from './dto/update-ninjas.dto';
 export class NinjasController {
   @Get()
   getNinjas(@Query('type') type: string) {
-    return [{ type }];
+    return { type };
   }
 
   @Get(':id')
